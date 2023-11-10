@@ -1,0 +1,1 @@
+(()=>{const e=document.getElementById("form");document.getElementById("email"),document.getElementById("country"),document.getElementById("zipCode"),document.getElementById("password"),document.getElementById("passwordConfirmation"),e.addEventListener("submit",(e=>{e.preventDefault()}))})();

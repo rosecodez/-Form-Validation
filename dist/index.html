@@ -4,16 +4,11 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Form Validation</title>
-    <script src="index.js" defer></script>
-    <link rel="stylesheet" type="text/css" href="style.css">
-    <script src="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/js/intlTelInput.min.js"></script>
-    
-    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/intl-tel-input@18.2.1/build/css/intlTelInput.css">
-</head>
+    <script src="bundle.js" defer></script>
+  </head>
 <body>
-    <form action="/action_page.php">
-        <input type="tel" class="form-control" name="smsno" id="smsno" placeholder="Type contact1 number here...." pattern="[7-9]{1}[0-9]{9}" required />
-        <label for="email" class="text">Email</label>
+    <form id="form" action="/action_page.php">
+        <label for="email">Email</label>
         <input
           type="text"
           class="form"
@@ -23,17 +18,12 @@
           placeholder="Title"
         />
 
-        <label for="country" class="text">Country</label>
-        <input
-          type="text"
-          class="form"
-          id="country"
-          name="country"
-          value=""
-          placeholder="country"
-        />
+        <label for="country">Country</label>
+        <select id="country" name="country">
+          <option></option>
+        </select>
 
-        <label for="zipCode" class="text">ZipCode</label>
+        <label for="zipCode">ZipCode</label>
         <input
           type="zip"
           class="form"
@@ -43,7 +33,7 @@
           placeholder="zipCode"
         />
 
-        <label for="password" class="text">Password</label>
+        <label for="password">Password</label>
         <input
           type="password"
           class="form"
@@ -53,7 +43,7 @@
           placeholder="password"
         />
         
-        <label for="passwordConfirmation" class="text">Password Confirmation</label>
+        <label for="passwordConfirmation">Password Confirmation</label>
         <input
           type="password"
           class="form"
