@@ -9,18 +9,20 @@
 <body>
     <form id="form" action="/action_page.php">
         <label for="email">Email</label>
-        <input
-          type="text"
-          class="form"
-          id="email"
-          name="email"
-          value=""
-          placeholder="Title"
-        />
+          <input
+            type="text"
+            class="form"
+            id="email"
+            name="email"
+            value=""
+            placeholder="name@gmail.com"
+            required minlength="8"
+          />
+          <p id="emailError" class="error"></p>
 
         <label for="country">Country</label>
         <select id="country" name="country">
-          <option></option>
+          <option>Country</option>
         </select>
 
         <label for="zipCode">ZipCode</label>
@@ -30,7 +32,7 @@
           id="zipCode"
           name="zipCode"
           value=""
-          placeholder="zipCode"
+          placeholder="zipCode" required
         />
 
         <label for="password">Password</label>
@@ -40,24 +42,23 @@
           id="password"
           name="password"
           value=""
-          placeholder="password"
+          placeholder="Password" required minlength="8"
         />
+        <p id="passwordError" class="error"></p>
         
         <label for="passwordConfirmation">Password Confirmation</label>
         <input
           type="password"
           class="form"
-          id="password"
-          name="password"
+          id="passwordConfirmation"
+          name="passwordConfirmation"
           value=""
-          placeholder="password"
+          placeholder="Confirm Password" required
         />
-        <div id="buttons">
-          <button id="cancel" value="cancel">
-            Cancel
-          </button>
-          <button id="confirm" value="default">Confirm</button>
-        </div>
+        <p id="passwordConfirmationError" class="error"></p>
+
+        <button id="confirm" value="default">Confirm</button>
+
       </form>
 </body>
 </html>
